@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jordan Prayer Times - Accurate prayer times, Azan notifications, Quran, Qibla direction, and Islamic remembrances for all cities in Jordan.">
+    <meta name="keywords" content="Jordan Prayer Times, مواقيت الصلاة الأردن, Azan, Adhan, Quran, Qibla, Islamic App, Prayer Times Jordan">
+    <meta name="author" content="MBF">
+    <meta name="theme-color" content="#1a5f4a">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Jordan Prayer Times - مواقيت الصلاة الأردن">
+    <meta property="og:description" content="Accurate prayer times for all 34 cities in Jordan with Azan notifications, Quran, Qibla compass, and bilingual Arabic/English support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/feature-graphic-v2.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/app-icon.png">
+    <link rel="apple-touch-icon" href="images/icons/app-icon.png">
+
+    <title>Jordan Prayer Times - مواقيت الصلاة الأردن</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-mosque"></i>
+                <span data-en="Jordan Prayer Times" data-ar="مواقيت الصلاة الأردن">Jordan Prayer Times</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#features" class="nav-link" data-en="Features" data-ar="المميزات">Features</a></li>
+                <li><a href="#versions" class="nav-link" data-en="What's New" data-ar="الجديد">What's New</a></li>
+                <li><a href="#screenshots" class="nav-link" data-en="Screenshots" data-ar="صور التطبيق">Screenshots</a></li>
+                <li><a href="#download" class="nav-link" data-en="Download" data-ar="تحميل">Download</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-en">العربية</span>
+                        <span class="lang-ar" style="display: none;">English</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-en">Jordan Prayer Times</span>
+                    <span class="title-ar">مواقيت الصلاة الأردن</span>
+                </h1>
+                <p class="hero-subtitle" data-en="Never miss a prayer. Get accurate prayer times for all 34 cities in Jordan, sourced directly from the official Ministry of Awqaf. Version 2.0 brings a complete transformation with modern Material Design 3 UI, Qibla compass, Quran viewer, and bilingual Arabic/English support." data-ar="لا تفوت صلاة أبداً. احصل على مواقيت الصلاة الدقيقة لجميع مدن الأردن الـ 34، مباشرة من موقع وزارة الأوقاف الرسمي. الإصدار 2.0 يقدم تحولاً كاملاً مع تصميم Material Design 3 الحديث، بوصلة القبلة، عارض القرآن، ودعم ثنائي اللغة عربي/إنجليزي.">
+                    Never miss a prayer. Get accurate prayer times for all 34 cities in Jordan, sourced directly from the official Ministry of Awqaf. Version 2.0 brings a complete transformation with modern Material Design 3 UI, Qibla compass, Quran viewer, and bilingual Arabic/English support.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        <span data-en="Download Now" data-ar="حمّل الآن">Download Now</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-star"></i>
+                        <span data-en="Explore Features" data-ar="استكشف المميزات">Explore Features</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="34">0</span>
+                        <span class="stat-label" data-en="Cities Covered" data-ar="مدينة مغطاة">Cities Covered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label" data-en="Daily Prayers" data-ar="صلوات يومية">Daily Prayers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label" data-en="% Accurate" data-ar="% دقة">% Accurate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <img src="images/screenshots/v2/01_prayer_times_light.png" alt="Jordan Prayer Times App" class="phone-screenshot">
+                        </div>
+                    </div>
+                    <div class="phone-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Amazing Features" data-ar="مميزات رائعة">Amazing Features</h2>
+                <p class="section-subtitle" data-en="Everything you need to stay connected with your daily prayers" data-ar="كل ما تحتاجه للبقاء على اتصال بصلواتك اليومية">Everything you need to stay connected with your daily prayers</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-en="Accurate Prayer Times" data-ar="مواقيت صلاة دقيقة">Accurate Prayer Times</h3>
+                    <p data-en="Prayer times for all 34 Jordanian cities sourced directly from the official Ministry of Awqaf website. Fajr, Dhuhr, Asr, Maghrib, Isha, and Sunrise times." data-ar="مواقيت الصلاة لجميع مدن الأردن الـ 34 مباشرة من موقع وزارة الأوقاف الرسمي. الفجر، الظهر، العصر، المغرب، العشاء، والشروق.">Prayer times for all 34 Jordanian cities sourced directly from the official Ministry of Awqaf website. Fajr, Dhuhr, Asr, Maghrib, Isha, and Sunrise times.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 data-en="Smart Notifications" data-ar="إشعارات ذكية">Smart Notifications</h3>
+                    <p data-en="Customizable prayer alerts with 5 different beautiful Athan recitations. Works even when the app is closed or screen is locked." data-ar="تنبيهات صلاة قابلة للتخصيص مع 5 أصوات أذان مختلفة وجميلة. تعمل حتى عند إغلاق التطبيق أو قفل الشاشة.">Customizable prayer alerts with 5 different beautiful Athan recitations. Works even when the app is closed or screen is locked.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <h3 data-en="Complete Quran" data-ar="القرآن الكريم كاملاً">Complete Quran</h3>
+                    <p data-en="Full Holy Quran with beautiful Medina layout, audio playback with multiple reciters, translations, full-text search, bookmarks, and Tafsir." data-ar="القرآن الكريم كاملاً بتصميم مصحف المدينة الجميل، تشغيل صوتي مع قراء متعددين، ترجمات، بحث نصي، إشارات مرجعية، وتفسير.">Full Holy Quran with beautiful Medina layout, audio playback with multiple reciters, translations, full-text search, bookmarks, and Tafsir.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3 data-en="Qibla Compass & Map" data-ar="بوصلة القبلة والخريطة">Qibla Compass & Map</h3>
+                    <p data-en="Interactive compass showing direction to Mecca with real-time GPS-based map view, rotating indicator, and haptic feedback alignment detection." data-ar="بوصلة تفاعلية تظهر اتجاه مكة المكرمة مع خريطة GPS مباشرة، مؤشر دوار، واهتزاز عند المحاذاة.">Interactive compass showing direction to Mecca with real-time GPS-based map view, rotating indicator, and haptic feedback alignment detection.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 data-en="Bilingual Support" data-ar="دعم ثنائي اللغة">Bilingual Support</h3>
+                    <p data-en="Full English and Arabic interface with automatic RTL layout, Arabic numerals for authentic experience, and Hijri calendar with Islamic month names." data-ar="واجهة كاملة بالإنجليزية والعربية مع تخطيط RTL تلقائي، أرقام عربية لتجربة أصيلة، وتقويم هجري بأسماء الأشهر الإسلامية.">Full English and Arabic interface with automatic RTL layout, Arabic numerals for authentic experience, and Hijri calendar with Islamic month names.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi-slash"></i>
+                    </div>
+                    <h3 data-en="Works Offline" data-ar="يعمل بدون إنترنت">Works Offline</h3>
+                    <p data-en="Works without internet after initial setup. Monthly caching with 6-hour smart sync saves battery (96% more efficient)." data-ar="يعمل بدون إنترنت بعد الإعداد الأولي. تخزين مؤقت شهري مع مزامنة ذكية كل 6 ساعات يوفر البطارية (أكثر كفاءة بـ 96%).">Works without internet after initial setup. Monthly caching with 6-hour smart sync saves battery (96% more efficient).</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</h3>
+                    <p data-en="Beautiful Material Design 3 UI with dark mode OLED optimization, animated prayer cards with countdown timer, and clean intuitive layout." data-ar="تصميم Material Design 3 جميل مع تحسين الوضع الداكن لشاشات OLED، بطاقات صلاة متحركة مع عداد تنازلي، وتخطيط نظيف وبديهي.">Beautiful Material Design 3 UI with dark mode OLED optimization, animated prayer cards with countdown timer, and clean intuitive layout.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 data-en="Hijri Calendar" data-ar="التقويم الهجري">Hijri Calendar</h3>
+                    <p data-en="View the Islamic Hijri calendar alongside the Gregorian date with Islamic month names in both Arabic and English." data-ar="عرض التقويم الهجري الإسلامي بجانب التاريخ الميلادي مع أسماء الأشهر الإسلامية بالعربية والإنجليزية.">View the Islamic Hijri calendar alongside the Gregorian date with Islamic month names in both Arabic and English.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Version Comparison Section -->
+    <section class="version-comparison" id="versions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Version 2.0 - Complete Transformation" data-ar="الإصدار 2.0 - تحول كامل">Version 2.0 - Complete Transformation</h2>
+                <p class="section-subtitle" data-en="See the evolution of Jordan Prayer Times" data-ar="شاهد تطور تطبيق مواقيت الصلاة الأردن">See the evolution of Jordan Prayer Times</p>
+            </div>
+
+            <!-- Feature Graphic Comparison -->
+            <div class="feature-graphic-comparison">
+                <div class="graphic-card">
+                    <span class="graphic-badge v1-badge">V1.0</span>
+                    <img src="images/feature-graphic-v1.png" alt="Version 1 Feature Graphic" class="feature-graphic-img">
+                </div>
+                <div class="graphic-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="graphic-card featured">
+                    <span class="graphic-badge v2-badge">V2.0 NEW</span>
+                    <img src="images/feature-graphic-v2.png" alt="Version 2 Feature Graphic" class="feature-graphic-img">
+                </div>
+            </div>
+
+            <div class="comparison-container">
+                <!-- Version 1 -->
+                <div class="version-card v1">
+                    <span class="version-badge" data-en="Version 1.0" data-ar="الإصدار 1.0">Version 1.0</span>
+                    <h3 data-en="The Beginning" data-ar="البداية">The Beginning</h3>
+                    <p data-en="Simple and functional prayer times app for Jordan" data-ar="تطبيق بسيط وعملي لمواقيت الصلاة في الأردن">Simple and functional prayer times app for Jordan</p>
+                    <img src="images/screenshots/v1/1.jpg" alt="Jordan Prayer Times V1" class="version-screenshot">
+                    <ul class="version-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Basic prayer times display" data-ar="عرض مواقيت الصلاة الأساسية">Basic prayer times display</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Simple notifications" data-ar="إشعارات بسيطة">Simple notifications</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Light theme only" data-ar="المظهر الفاتح فقط">Light theme only</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Arabic city names" data-ar="أسماء المدن بالعربية">Arabic city names</span></li>
+                    </ul>
+                </div>
+                <!-- Version 2 -->
+                <div class="version-card v2">
+                    <span class="version-badge" data-en="Version 2.0 - NEW" data-ar="الإصدار 2.0 - جديد">Version 2.0 - NEW</span>
+                    <h3 data-en="Complete Transformation" data-ar="تحول كامل">Complete Transformation</h3>
+                    <p data-en="Modern design with powerful new features" data-ar="تصميم حديث مع مميزات جديدة قوية">Modern design with powerful new features</p>
+                    <img src="images/screenshots/v2/01_prayer_times_light.png" alt="Jordan Prayer Times V2" class="version-screenshot">
+                    <ul class="version-features">
+                        <li><i class="fas fa-star"></i> <span data-en="Material Design 3 UI" data-ar="واجهة Material Design 3">Material Design 3 UI</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Qibla compass with GPS map" data-ar="بوصلة القبلة مع خريطة GPS">Qibla compass with GPS map</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Complete Quran viewer" data-ar="عارض القرآن الكامل">Complete Quran viewer</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Arabic/English bilingual" data-ar="ثنائي اللغة عربي/إنجليزي">Arabic/English bilingual</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Dark mode with OLED" data-ar="الوضع الداكن مع OLED">Dark mode with OLED</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="5 Athan recitations" data-ar="5 أصوات أذان">5 Athan recitations</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Hijri calendar" data-ar="التقويم الهجري">Hijri calendar</span></li>
+                        <li><i class="fas fa-star"></i> <span data-en="Interactive onboarding" data-ar="دليل تفاعلي للمستخدم">Interactive onboarding</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="App Screenshots" data-ar="صور التطبيق">App Screenshots</h2>
+                <p class="section-subtitle" data-en="Take a peek inside the app" data-ar="ألقِ نظرة داخل التطبيق">Take a peek inside the app</p>
+            </div>
+            <div class="screenshots-slider">
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/01_prayer_times_light.png" alt="Prayer Times" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/02_qibla_compass.png" alt="Qibla Compass" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/03_quran_viewer.png" alt="Quran Viewer" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/04_settings.png" alt="Settings" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/05_qibla_map.png" alt="Qibla Map" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/06_arabic_interface.png" alt="Arabic Interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/07_arabic_settings.png" alt="Arabic Settings" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/08_about.png" alt="About" loading="lazy">
+                    </div>
+                    <!-- Duplicate for infinite scroll effect -->
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/01_prayer_times_light.png" alt="Prayer Times" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/02_qibla_compass.png" alt="Qibla Compass" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/03_quran_viewer.png" alt="Quran Viewer" loading="lazy">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshots/v2/04_settings.png" alt="Settings" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Download the App" data-ar="حمّل التطبيق">Download the App</h2>
+                <p class="section-subtitle" data-en="Available on multiple platforms" data-ar="متوفر على منصات متعددة">Available on multiple platforms</p>
+            </div>
+
+            <div class="download-categories">
+                <!-- Mobile Apps -->
+                <div class="download-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span data-en="Mobile Apps" data-ar="تطبيقات الجوال">Mobile Apps</span>
+                    </h3>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.mbf.jordan_prayer_times_app"
+                           class="store-btn google-play" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-google-play"></i>
+                            <div class="store-info">
+                                <span class="store-label">GET IT ON</span>
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn app-store" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-apple"></i>
+                            <div class="store-info">
+                                <span class="store-label">Download on the</span>
+                                <span class="store-name">App Store</span>
+                            </div>
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </a>
+                        <a href="#" class="store-btn huawei-gallery" target="_blank" rel="noopener noreferrer">
+                            <svg class="huawei-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                            <div class="store-info">
+                                <span class="store-label">EXPLORE IT ON</span>
+                                <span class="store-name">AppGallery</span>
+                            </div>
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Smartwatch Apps -->
+                <div class="download-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-clock"></i>
+                        <span data-en="Smartwatch Apps" data-ar="تطبيقات الساعات الذكية">Smartwatch Apps</span>
+                    </h3>
+                    <div class="store-buttons">
+                        <a href="#" class="store-btn wear-os" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-android"></i>
+                            <div class="store-info">
+                                <span class="store-label">GET IT FOR</span>
+                                <span class="store-name">Wear OS</span>
+                            </div>
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </a>
+                        <a href="#" class="store-btn apple-watch" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-apple"></i>
+                            <div class="store-info">
+                                <span class="store-label">GET IT FOR</span>
+                                <span class="store-name">Apple Watch</span>
+                            </div>
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </a>
+                        <a href="#" class="store-btn huawei-watch" target="_blank" rel="noopener noreferrer">
+                            <svg class="huawei-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                            <div class="store-info">
+                                <span class="store-label">GET IT FOR</span>
+                                <span class="store-name">Huawei Watch</span>
+                            </div>
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h2>
+                <p class="section-subtitle" data-en="Have questions or feedback? We'd love to hear from you!" data-ar="هل لديك أسئلة أو ملاحظات؟ يسعدنا سماعك!">Have questions or feedback? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+                            <a href="mailto:m.banifawaz@outlook.com">m.banifawaz@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+                            <a href="tel:+962789336602">+962 789 336 602</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4 data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</h4>
+                            <a href="https://mbanifawaz.github.io/Jordan_Prayer_Times_App_PP/" target="_blank" rel="noopener noreferrer" data-en="View Privacy Policy" data-ar="عرض سياسة الخصوصية">View Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4 data-en="LinkedIn" data-ar="لينكد إن">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/munes-bani-fawaz-799151204/" target="_blank" rel="noopener noreferrer" data-en="Connect on LinkedIn" data-ar="تواصل عبر لينكد إن">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-mosque"></i>
+                        <span data-en="Jordan Prayer Times" data-ar="مواقيت الصلاة الأردن">Jordan Prayer Times</span>
+                    </div>
+                    <p class="footer-tagline" data-en="Your companion for daily prayers" data-ar="رفيقك لصلواتك اليومية">Your companion for daily prayers</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                        <ul>
+                            <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                            <li><a href="#features" data-en="Features" data-ar="المميزات">Features</a></li>
+                            <li><a href="#download" data-en="Download" data-ar="تحميل">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-en="Legal" data-ar="قانوني">Legal</h4>
+                        <ul>
+                            <li><a href="https://mbanifawaz.github.io/Jordan_Prayer_Times_App_PP/" target="_blank" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+                            <li><a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><span data-en="&copy;" data-ar="©"></span> <span id="currentYear">2024</span> <span data-en="Jordan Prayer Times. All rights reserved." data-ar="مواقيت الصلاة الأردن. جميع الحقوق محفوظة.">Jordan Prayer Times. All rights reserved.</span></p>
+                <p class="footer-dua">بسم الله الرحمن الرحيم</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
