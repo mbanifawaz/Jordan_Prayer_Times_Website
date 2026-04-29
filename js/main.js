@@ -297,27 +297,6 @@ function updateYear() {
 }
 
 /**
- * Language toggle functionality with full translation
- */
-function initLanguageToggle() {
-    const langToggle = document.getElementById('langToggle');
-    if (!langToggle) return;
-
-    // Check for saved language preference
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-    if (savedLang === 'ar') {
-        setLanguage('ar');
-    }
-
-    langToggle.addEventListener('click', () => {
-        const html = document.documentElement;
-        const currentLang = html.getAttribute('data-lang') || 'en';
-        const newLang = currentLang === 'en' ? 'ar' : 'en';
-        setLanguage(newLang);
-    });
-}
-
-/**
  * Set the website language
  */
 function setLanguage(lang) {
@@ -341,7 +320,17 @@ function setLanguage(lang) {
     translatableElements.forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
         if (text) {
-            el.textContent = text;
+            // Normalize all newline markers to |||
+            let cleanText = text
+                .replace(/<br\s*\/?>/gi, '|||')
+                .replace(/&#10;/g, '|||');
+            
+            if (cleanText.indexOf('|||') !== -1) {
+                const parts = cleanText.split('|||');
+                el.innerHTML = parts.join('<br>');
+            } else {
+                el.textContent = text;
+            }
         }
     });
 
@@ -351,51 +340,23 @@ function setLanguage(lang) {
     // Update font for Arabic
     document.body.style.fontFamily = lang === 'ar'
         ? "'Amiri', 'Traditional Arabic', serif"
-        : "'Poppins', -apple-system, BlinkMacSystemFont, sans-serif";
+: "'Poppins', -apple-system, BlinkMacSystemFont, sans-serif";
 }
 
 // Initialize language toggle
-initLanguageToggle();
+function initLanguageToggle() {
+    const langToggle = document.getElementById('langToggle');
+    if (!langToggle) return;
 
-/**
- * Image comparison slider (for version comparison)
- */
-function initImageComparison() {
-    const comparisons = document.querySelectorAll('.image-comparison');
+    // Check for saved language preference and set initial language
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
 
-    comparisons.forEach(comparison => {
-        const slider = comparison.querySelector('.comparison-slider');
-        const beforeImage = comparison.querySelector('.before-image');
-
-        if (!slider || !beforeImage) return;
-
-        let isSliding = false;
-
-        const slide = (e) => {
-            if (!isSliding) return;
-
-            const rect = comparison.getBoundingClientRect();
-            let x = e.clientX - rect.left;
-            x = Math.max(0, Math.min(x, rect.width));
-
-            const percent = (x / rect.width) * 100;
-            beforeImage.style.width = `${percent}%`;
-            slider.style.left = `${percent}%`;
-        };
-
-        slider.addEventListener('mousedown', () => isSliding = true);
-        document.addEventListener('mouseup', () => isSliding = false);
-        document.addEventListener('mousemove', slide);
-
-        // Touch support
-        slider.addEventListener('touchstart', () => isSliding = true);
-        document.addEventListener('touchend', () => isSliding = false);
-        document.addEventListener('touchmove', (e) => {
-            if (isSliding && e.touches[0]) {
-                const touch = e.touches[0];
-                slide({ clientX: touch.clientX });
-            }
-        });
+    langToggle.addEventListener('click', function() {
+        const html = document.documentElement;
+        const currentLang = html.getAttribute('data-lang') || 'en';
+        const newLang = currentLang === 'en' ? 'ar' : 'en';
+        setLanguage(newLang);
     });
 }
 
@@ -537,3 +498,6 @@ toastStyles.textContent = `
     }
 `;
 document.head.appendChild(toastStyles);
+
+// Initialize on load
+initLanguageToggle();

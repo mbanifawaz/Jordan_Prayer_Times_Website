@@ -1183,6 +1183,12 @@ body {
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
     box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.contact-block:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
 .block-title {
@@ -1206,6 +1212,12 @@ body {
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
     box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.developer-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
 .developer-title {
@@ -1373,7 +1385,20 @@ body {
 .contributor-card p {
     color: var(--text-secondary);
     font-size: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.6;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+}
+
+.contributor-card p br {
+    display: block;
+    content: "";
+    height: 4px;
+    line-height: 4px;
+    margin: 0;
+    padding: 0;
 }
 
 .contributor-card a {
@@ -1733,13 +1758,23 @@ body {
     text-align: right;
 }
 
-[dir="rtl"] .contact-item {
-    flex-direction: row-reverse;
+html[dir="rtl"] .contact-item,
+html[dir="rtl"] .legal-block .contact-item,
+html[dir="rtl"] .developers-block-full .contact-item {
+    /* Keep normal layout (icon left, text right) */
     text-align: right;
 }
 
-[dir="rtl"] .contact-item div {
+html[dir="rtl"] .developer-section {
     text-align: right;
+}
+
+html[dir="rtl"] .developer-title {
+    text-align: right;
+}
+
+html[dir="rtl"] .block-title {
+    text-align: center;
 }
 
 [dir="rtl"] .footer-content {
