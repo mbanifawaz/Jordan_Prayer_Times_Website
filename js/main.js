@@ -323,7 +323,8 @@ function setLanguage(lang) {
             // Normalize all newline markers to |||
             let cleanText = text
                 .replace(/<br\s*\/?>/gi, '|||')
-                .replace(/&#10;/g, '|||');
+                .replace(/&#10;/g, '|||')
+                .replace(/\n/g, '|||');
             
             if (cleanText.indexOf('|||') !== -1) {
                 const parts = cleanText.split('|||');
